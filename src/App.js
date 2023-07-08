@@ -1,14 +1,19 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.svg';
 import './App.css';
+import ButtonComponent from './Components/ButtonComponent/ButtonComponent.jsx';
+import Item from './Components/Item/Item.jsx';
+import NavBar from './Components/NavBar/NavBar.jsx';
+import ItemListContainer from './Components/ItemListContainer/ItemListContainer.jsx';
 
-function App() {
+function App () {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+      
+        <NavBar></NavBar>
+        </header>
+        <ItemListContainer mensaje="HolaMundo"/>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,7 +22,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      
     </div>
   );
 }
